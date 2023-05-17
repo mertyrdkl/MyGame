@@ -143,12 +143,15 @@ if __name__ == "__main__":
     print("WELCOME to Mert's Game, enjoy!")
     # Get the number of players from the user
     while True:
-        try:    
+        try:
             num_players = int(input("Enter the number of players: "))
-            if num_players < 1:  # add some sanity check if needed
+            if num_players < 1:
                 print("Please enter a positive number!")
                 continue
-            break
+            elif num_players == 0:
+                print("Sadly, you cannot play yourself. There must be at least 2 players.")
+            else:
+                break
         except ValueError:
             print("Invalid input. Please enter a number.")
 

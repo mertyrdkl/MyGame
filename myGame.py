@@ -148,7 +148,7 @@ if __name__ == "__main__":
             if num_players < 1:
                 print("Please enter a positive number!")
                 continue
-            elif num_players == 0:
+            elif num_players == 1:
                 print("Sadly, you cannot play yourself. There must be at least 2 players.")
             else:
                 break
